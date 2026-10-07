@@ -59,7 +59,7 @@ KPIs were reconciled across Excel, Python and SQL (8,000 shipments, 82.13% on-ti
 4. Track a monthly branch scorecard against a 90% on-time target.
 
 ## Dashboard
-Built in Power BI with four pages: Executive Overview, Branch & Lane Performance, Delays/Returns/Customers, and Key Insights. DAX measures are in [`powerbi/measures.dax`](powerbi/measures.dax) and the theme in `powerbi/theme.json`. An Excel version of the dashboard is in `data/cleaned/courier_excel_analysis.xlsx` (sheet `Excel_Dashboard`).
+   A Power BI dashboard (four pages: Executive Overview, Branch & Lane Performance, Delays/Returns/Customers, Key Insights) is being finalised. The DAX measures are in [`powerbi/measures.dax`](powerbi/measures.dax) and the theme in `powerbi/theme.json`. An Excel version of the dashboard is available in `data/cleaned/courier_excel_analysis.xlsx` (sheet `Excel_Dashboard`).
 
 <!-- After building the dashboard, save screenshots in powerbi/ and uncomment:
 ![Page 1](powerbi/dashboard_page1.png)
