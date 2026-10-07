@@ -1,0 +1,16 @@
+dest_zone,dest_city,delivered,on_time_pct,rank_in_zone
+Central,Bhopal,237,79.32,1
+East,Kolkata,437,75.06,1
+East,Patna,282,74.82,2
+North,Meerut,370,88.92,1
+North,Chandigarh,293,88.4,2
+North,Noida,446,84.53,3
+North,Lucknow,436,81.19,4
+North,Delhi,860,77.91,5
+South,Chennai,457,85.78,1
+South,Hyderabad,546,83.52,2
+South,Bengaluru,830,81.69,3
+West,Pune,522,87.16,1
+West,Ahmedabad,450,85.78,2
+West,Jaipur,357,83.75,3
+West,Mumbai,903,79.4,4

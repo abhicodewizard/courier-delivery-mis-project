@@ -1,0 +1,13 @@
+origin_zone,dest_zone,delivered,on_time_pct,avg_transit_days
+North,East,301,73.09,4.03
+West,East,242,76.03,4.08
+South,East,148,76.35,3.97
+South,West,544,80.33,3.96
+South,North,546,81.87,3.89
+West,North,797,82.43,3.93
+North,South,728,82.55,3.84
+North,West,843,83.39,3.84
+South,South,406,83.74,2.53
+North,North,966,84.06,2.61
+West,South,611,84.62,3.87
+West,West,753,85.26,2.57

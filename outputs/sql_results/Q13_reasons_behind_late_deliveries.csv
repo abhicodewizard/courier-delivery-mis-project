@@ -1,0 +1,6 @@
+reason,late_shipments,avg_delay_days,share_pct
+Hub Congestion,439,1.85,33.1
+Weather,389,1.84,29.3
+Address Issue,188,1.78,14.2
+Customer Unavailable,188,1.84,14.2
+Vehicle Breakdown,123,1.93,9.3

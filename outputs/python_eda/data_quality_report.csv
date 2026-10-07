@@ -1,0 +1,8 @@
+Check,Value
+Rows in raw file,8080
+Duplicate rows removed,80
+Missing Destination State recovered from city,40
+Missing Payment Mode labelled Unknown,50
+Weights corrected (grams -> kg),25
+Rows in clean file,8000
+Unrated shipments (blank rating kept),3584

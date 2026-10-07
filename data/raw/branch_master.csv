@@ -1,0 +1,16 @@
+Branch ID,Branch Name,City,State,Zone
+B01,Delhi Hub,Delhi,Delhi,North
+B02,Noida Hub,Noida,Uttar Pradesh,North
+B03,Meerut Branch,Meerut,Uttar Pradesh,North
+B04,Lucknow Hub,Lucknow,Uttar Pradesh,North
+B05,Chandigarh Branch,Chandigarh,Chandigarh,North
+B06,Jaipur Hub,Jaipur,Rajasthan,West
+B07,Mumbai Hub,Mumbai,Maharashtra,West
+B08,Pune Branch,Pune,Maharashtra,West
+B09,Ahmedabad Hub,Ahmedabad,Gujarat,West
+B10,Bengaluru Hub,Bengaluru,Karnataka,South
+B11,Chennai Hub,Chennai,Tamil Nadu,South
+B12,Hyderabad Hub,Hyderabad,Telangana,South
+B13,Kolkata Hub,Kolkata,West Bengal,East
+B14,Patna Branch,Patna,Bihar,East
+B15,Bhopal Branch,Bhopal,Madhya Pradesh,Central

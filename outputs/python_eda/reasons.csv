@@ -1,0 +1,7 @@
+Delay/Return Reason,Delivered,RTO,Total
+Hub Congestion,439,0,439
+Weather,389,0,389
+Address Issue,188,195,383
+Customer Unavailable,188,165,353
+Customer Refused,0,171,171
+Vehicle Breakdown,123,0,123

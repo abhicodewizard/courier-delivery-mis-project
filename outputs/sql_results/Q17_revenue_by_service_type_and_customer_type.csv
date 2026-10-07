@@ -1,0 +1,7 @@
+service_type,customer_type,shipments,freight_revenue,avg_freight,avg_weight_kg
+Standard,B2C,2611,314777.0,120.56,2.48
+Standard,B2B,1320,256110.0,194.02,4.24
+Express,B2C,1307,245794.0,188.06,2.5
+Express,B2B,698,219962.0,315.13,4.27
+Economy,B2C,1316,112139.0,85.21,2.43
+Economy,B2B,748,101365.0,135.51,4.47

@@ -1,0 +1,5 @@
+weight_band,delivered,on_time_pct,avg_freight
+1) Up to 1 kg,1404,81.7,61.06
+2) 1-5 kg,4834,82.09,123.54
+3) 5-15 kg,1115,82.51,371.58
+4) Above 15 kg,73,87.67,937.58

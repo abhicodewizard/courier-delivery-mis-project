@@ -1,0 +1,11 @@
+Lane,Shipments,Delivered,On-Time %,Avg Transit Days,RTO %,Freight Revenue,Avg Rating
+Mumbai -> Bengaluru,148,138,82.61,3.99,5.48,24965,3.98
+Mumbai -> Mumbai,144,139,78.42,2.47,3.47,15422,3.88
+Mumbai -> Delhi,143,128,74.22,4.0,9.86,23990,3.83
+Delhi -> Mumbai,131,123,82.11,3.89,5.38,20463,3.89
+Bengaluru -> Mumbai,126,114,75.44,4.04,8.8,23308,3.99
+Delhi -> Bengaluru,121,113,87.61,3.73,6.61,20078,3.9
+Delhi -> Delhi,120,115,83.48,2.06,4.17,12682,4.06
+Bengaluru -> Bengaluru,103,96,76.04,2.33,4.95,14559,3.77
+Bengaluru -> Delhi,103,92,80.43,3.95,9.8,15488,3.9
+Meerut -> Delhi,100,95,85.26,2.71,5.0,15512,3.82

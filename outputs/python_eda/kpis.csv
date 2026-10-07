@@ -1,0 +1,17 @@
+KPI,Value
+Total Shipments,8000.0
+Delivered,7426.0
+RTO,531.0
+In Transit,43.0
+On-Time Deliveries,6099.0
+Late Deliveries,1327.0
+On-Time Delivery %,82.13
+SLA Breach %,17.87
+Avg Transit Days,3.53
+Avg Delay Days (late only),1.84
+RTO %,6.67
+First-Attempt Delivery %,85.05
+Total Freight Revenue,1250147.0
+Avg Freight per Shipment,156.27
+Total COD Value,12312590.0
+Avg Customer Rating,3.88

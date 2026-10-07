@@ -1,0 +1,16 @@
+dest_city,dest_zone,delivered,on_time_pct,avg_transit_days,performance_rank
+Meerut,North,370,88.92,3.18,1
+Chandigarh,North,293,88.4,3.38,2
+Pune,West,522,87.16,3.34,3
+Ahmedabad,West,450,85.78,3.37,4
+Chennai,South,457,85.78,3.6,4
+Noida,North,446,84.53,3.37,6
+Jaipur,West,357,83.75,3.4,7
+Hyderabad,South,546,83.52,3.55,8
+Bengaluru,South,830,81.69,3.57,9
+Lucknow,North,436,81.19,3.41,10
+Mumbai,West,903,79.4,3.55,11
+Bhopal,Central,237,79.32,4.01,12
+Delhi,North,860,77.91,3.51,13
+Kolkata,East,437,75.06,3.95,14
+Patna,East,282,74.82,4.03,15

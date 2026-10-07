@@ -1,0 +1,16 @@
+branch_name,city,outbound_shipments
+Bhopal Branch,Bhopal,0
+Chandigarh Branch,Chandigarh,0
+Patna Branch,Patna,0
+Kolkata Hub,Kolkata,345
+Hyderabad Hub,Hyderabad,355
+Lucknow Hub,Lucknow,459
+Ahmedabad Hub,Ahmedabad,469
+Jaipur Hub,Jaipur,483
+Chennai Hub,Chennai,508
+Pune Branch,Pune,523
+Meerut Branch,Meerut,767
+Noida Hub,Noida,787
+Bengaluru Hub,Bengaluru,983
+Delhi Hub,Delhi,1132
+Mumbai Hub,Mumbai,1189

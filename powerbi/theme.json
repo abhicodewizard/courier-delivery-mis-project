@@ -1,0 +1,13 @@
+{
+  "name": "Retail Analytics Theme",
+  "dataColors": ["#1F4E79", "#2E8B57", "#E67E22", "#7F8C8D", "#8E44AD", "#16A085", "#C0392B", "#2C3E50"],
+  "background": "#FFFFFF",
+  "foreground": "#2C3E50",
+  "tableAccent": "#1F4E79",
+  "good": "#2E8B57",
+  "neutral": "#E67E22",
+  "bad": "#C0392B",
+  "maximum": "#1F4E79",
+  "center": "#F4D03F",
+  "minimum": "#C0392B"
+}

@@ -1,0 +1,4 @@
+service_type,sla_days,delivered,on_time_pct,avg_transit_days,avg_delay_days_when_late
+Express,2,1856,75.81,2.26,1.81
+Standard,4,3649,83.53,3.31,1.86
+Economy,7,1921,85.58,5.18,1.86

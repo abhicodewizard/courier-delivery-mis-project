@@ -1,0 +1,5 @@
+Payment Mode,Shipments,Delivered,On-Time %,Avg Transit Days,RTO %,Freight Revenue,Avg Rating
+COD,2652,2344,81.36,3.51,11.11,347837,3.79
+Credit Account,1746,1661,81.7,3.57,4.38,353900,3.88
+Prepaid,3552,3376,82.91,3.52,4.5,541433,3.94
+Unknown,50,45,80.0,3.87,6.25,6977,3.85

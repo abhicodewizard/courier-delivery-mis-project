@@ -1,0 +1,11 @@
+origin_city,dest_city,shipments,delivered,on_time_pct,avg_transit_days
+Mumbai,Bengaluru,148,138,82.61,3.99
+Mumbai,Mumbai,144,139,78.42,2.47
+Mumbai,Delhi,143,128,74.22,4.0
+Delhi,Mumbai,131,123,82.11,3.89
+Bengaluru,Mumbai,126,114,75.44,4.04
+Delhi,Bengaluru,121,113,87.61,3.73
+Delhi,Delhi,120,115,83.48,2.06
+Bengaluru,Bengaluru,103,96,76.04,2.33
+Bengaluru,Delhi,103,92,80.43,3.95
+Meerut,Delhi,100,95,85.26,2.71

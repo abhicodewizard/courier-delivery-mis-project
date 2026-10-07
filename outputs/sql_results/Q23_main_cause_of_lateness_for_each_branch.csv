@@ -1,0 +1,16 @@
+dest_city,top_delay_reason,late_shipments
+Delhi,Hub Congestion,69
+Mumbai,Hub Congestion,69
+Bengaluru,Hub Congestion,48
+Kolkata,Hub Congestion,32
+Hyderabad,Hub Congestion,30
+Lucknow,Hub Congestion,26
+Noida,Weather,24
+Patna,Weather,24
+Pune,Weather,24
+Ahmedabad,Hub Congestion,20
+Chennai,Hub Congestion,19
+Jaipur,Weather,19
+Meerut,Hub Congestion,18
+Bhopal,Hub Congestion,16
+Chandigarh,Weather,11

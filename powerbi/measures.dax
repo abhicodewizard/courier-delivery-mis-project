@@ -1,0 +1,103 @@
+// =====================================================================
+// measures.dax  |  Paste each block into Power BI: Modeling > New table / New column / New measure
+// Data table name in the model: DeliveryData      Date table: DimDate
+// =====================================================================
+
+// ---------------------------------------------------------------------
+// 1) DATE TABLE  (Modeling > New table)
+// ---------------------------------------------------------------------
+DimDate =
+ADDCOLUMNS (
+    CALENDAR ( DATE ( 2024, 1, 1 ), DATE ( 2025, 12, 31 ) ),
+    "Year", YEAR ( [Date] ),
+    "Quarter", "Q" & QUARTER ( [Date] ),
+    "Month No", MONTH ( [Date] ),
+    "Year-Month", FORMAT ( [Date], "yyyy-mm" )
+)
+
+// ---------------------------------------------------------------------
+// 2) CALCULATED COLUMN  (select DeliveryData > Modeling > New column)
+//    A calculated column is evaluated row by row and stored in the model.
+// ---------------------------------------------------------------------
+Weight Band =
+SWITCH (
+    TRUE (),
+    DeliveryData[Weight (kg)] <= 1,  "1) Up to 1 kg",
+    DeliveryData[Weight (kg)] <= 5,  "2) 1-5 kg",
+    DeliveryData[Weight (kg)] <= 15, "3) 5-15 kg",
+    "4) Above 15 kg"
+)
+
+// ---------------------------------------------------------------------
+// 3) VOLUME AND STATUS MEASURES  (Modeling > New measure)
+//    A measure is calculated on the fly and reacts to slicers and filters.
+// ---------------------------------------------------------------------
+Total Shipments = DISTINCTCOUNT ( DeliveryData[AWB Number] )
+
+Delivered = CALCULATE ( [Total Shipments], DeliveryData[Status] = "Delivered" )
+
+RTO Shipments = CALCULATE ( [Total Shipments], DeliveryData[Status] = "RTO" )
+
+In Transit = CALCULATE ( [Total Shipments], DeliveryData[Status] = "In Transit" )
+
+// ---------------------------------------------------------------------
+// 4) SERVICE-LEVEL (SLA) MEASURES
+// ---------------------------------------------------------------------
+On-Time Deliveries = CALCULATE ( [Total Shipments], DeliveryData[SLA Status] = "On Time" )
+
+Late Deliveries = CALCULATE ( [Total Shipments], DeliveryData[SLA Status] = "Late" )
+
+On-Time % = DIVIDE ( [On-Time Deliveries], [Delivered] )
+
+SLA Breach % = DIVIDE ( [Late Deliveries], [Delivered] )
+
+// Assumed internal target (a business assumption, not from the data)
+On-Time Target = 0.90
+
+Gap to Target = [On-Time %] - [On-Time Target]
+
+// Used for conditional formatting: Format > fx > Format style: Field value
+On-Time Color = IF ( [On-Time %] >= [On-Time Target], "#2E8B57", "#C0392B" )
+
+Avg Transit Days = AVERAGE ( DeliveryData[Transit Days] )
+
+Avg Delay Days (Late) =
+CALCULATE ( AVERAGE ( DeliveryData[Delay Days] ), DeliveryData[SLA Status] = "Late" )
+
+// ---------------------------------------------------------------------
+// 5) RETURNS AND DELIVERY QUALITY
+// ---------------------------------------------------------------------
+RTO % = DIVIDE ( [RTO Shipments], [Delivered] + [RTO Shipments] )
+
+First-Attempt % =
+DIVIDE (
+    CALCULATE ( [Total Shipments], DeliveryData[Status] = "Delivered", DeliveryData[Delivery Attempts] = 1 ),
+    [Delivered]
+)
+
+Avg Rating = AVERAGE ( DeliveryData[Customer Rating] )
+
+// ---------------------------------------------------------------------
+// 6) REVENUE
+// ---------------------------------------------------------------------
+Freight Revenue = SUM ( DeliveryData[Freight Amount] )
+
+Avg Freight per Shipment = DIVIDE ( [Freight Revenue], [Total Shipments] )
+
+COD Value = SUM ( DeliveryData[COD Amount] )
+
+// ---------------------------------------------------------------------
+// 7) TIME INTELLIGENCE (needs DimDate related to DeliveryData[Booking Date])
+// ---------------------------------------------------------------------
+Shipments LY = CALCULATE ( [Total Shipments], SAMEPERIODLASTYEAR ( DimDate[Date] ) )
+
+Shipments YoY % = DIVIDE ( [Total Shipments] - [Shipments LY], [Shipments LY] )
+
+// ---------------------------------------------------------------------
+// 8) SHARE OF TOTAL (reacts to slicers, ignores the chart's own grouping)
+// ---------------------------------------------------------------------
+Late Share % =
+DIVIDE (
+    [Late Deliveries],
+    CALCULATE ( [Late Deliveries], ALLSELECTED ( DeliveryData[Delay/Return Reason] ) )
+)
